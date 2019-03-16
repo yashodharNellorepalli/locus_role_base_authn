@@ -1,0 +1,42 @@
+Locus Role Based Access Control Assignment
+
+Setup
+
+1)Create virtualenv
+    -- command : virtualenv venv
+
+2)Activate your environment
+    -- command: source venv/bin/activate
+
+3)install your required packages
+    -- comamnd: pip install -r requirements.pip
+
+4)run your mysql server locally and change accordingly in server/settings.py
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'locus',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',
+            'PORT': '3306'
+        }
+    }
+
+    schema name assumed to be `locus` change if you want to
+
+5)migrate sql
+ -- command : python manage.py migrate
+
+6) API:
+    1) assign_role_to_user
+        request_type : post
+        params: user_id, role_id
+
+    2) remove_role_of_user
+        request_type : post
+        params: user_id, role_id
+
+    3) check_user_action_type_from_resource
+        request_type : get
+        params: user_id, resource_id, action_type_id

@@ -1,0 +1,6 @@
+USER_ROLE_ALREADY_EXIST = 'user role already exist'
+USER_ROLE_DOES_NOT_EXIST = 'user role does not exist'
+USER_DOES_NOT_EXIST = 'User does not exist'
+ROLE_DOES_NOT_EXIST = 'Role does not exist'
+RESOURCE_DOES_NOT_EXIST = 'Resource does not exist'
+ACTION_TYPE_DOES_NOT_EXIST = 'Action Type does not exist'
